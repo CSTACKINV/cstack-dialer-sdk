@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const readline = require('readline');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const distDir = path.resolve(__dirname, 'dist');
 if (!fs.existsSync(distDir)) {
@@ -46,11 +47,12 @@ function askVersion() {
 
 module.exports = async () => {
   const outputFile = await askVersion();
+  const outputDir = path.dirname(path.resolve(__dirname, outputFile));
 
   return {
     entry: './src/index.js',
     output: {
-      path: path.dirname(path.resolve(__dirname, outputFile)),
+      path: outputDir,
       filename: path.basename(outputFile),
       libraryTarget: 'umd',
     },
@@ -67,5 +69,15 @@ module.exports = async () => {
     resolve: {
       extensions: ['.js', '.jsx'],
     },
+    plugins: [
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, 'media'),
+            to: path.resolve(outputDir, 'media'),
+          },
+        ],
+      }),
+    ],
   };
 };
