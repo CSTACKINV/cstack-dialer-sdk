@@ -17,6 +17,9 @@ importers:
       '@babel/preset-react':
         specifier: ^7.24.7
         version: 7.28.5(@babel/core@7.28.5)
+      '@cleverstack/dialer-widget':
+        specifier: ^0.0.7
+        version: 0.0.7(6670b4f89d147c9f0bcea74e8ceb01b2)
       '@emotion/react':
         specifier: ^11.11.4
         version: 11.14.0(@types/react@19.2.7)(react@18.3.1)
@@ -38,9 +41,6 @@ importers:
       copy-webpack-plugin:
         specifier: ^12.0.2
         version: 12.0.2(webpack@5.103.0)
-      csdialler:
-        specifier: 2.0.16
-        version: 2.0.16(6670b4f89d147c9f0bcea74e8ceb01b2)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -775,6 +775,23 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@cleverstack/dialer-widget@0.0.7':
+    resolution: {integrity: sha512-bUY/36LUpTapY+fVdQ6scTXG/Q6QUJisWPIzqLP5WToulhzO4ghLjXUwn5j5jL04tMUnpGOtPLjS1ACZyyZFfw==}
+    peerDependencies:
+      '@emotion/react': ^11.8.1
+      '@emotion/styled': ^11.8.1
+      '@mui/icons-material': ^5.3.1
+      '@mui/lab': ^5.0.0-alpha.71
+      '@mui/material': ^5.4.3
+      '@mui/styles': ^5.4.4
+      axios: ^1.3.4
+      react: ^17.0.2
+      react-redux: ^7.2.6
+      react-scripts: 5.0.0
+      redux: ^4.1.2
+      redux-devtools-extension: ^2.13.9
+      redux-thunk: ^2.4.1
 
   '@csstools/normalize.css@12.1.1':
     resolution: {integrity: sha512-YAYeJ+Xqh7fUou1d1j9XHl44BmsuThiTr4iNrgCQ3J27IbhXsxXDGZ1cXv8Qvs99d4rBbLiSKy3+WZiet32PcQ==}
@@ -2250,23 +2267,6 @@ packages:
   crypto-random-string@2.0.0:
     resolution: {integrity: sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==}
     engines: {node: '>=8'}
-
-  csdialler@2.0.16:
-    resolution: {integrity: sha512-QfyBZd5/aPC7L3BzoLCmFJKxdbtu8CTPSXz6/hapvSGjGzJp+lSbo6dU3tTn5CBfu2MjRKBWgAnMKJmkcq8XnA==}
-    peerDependencies:
-      '@emotion/react': ^11.8.1
-      '@emotion/styled': ^11.8.1
-      '@mui/icons-material': ^5.3.1
-      '@mui/lab': ^5.0.0-alpha.71
-      '@mui/material': ^5.4.3
-      '@mui/styles': ^5.4.4
-      axios: ^1.3.4
-      react: ^17.0.2
-      react-redux: ^7.2.6
-      react-scripts: 5.0.0
-      redux: ^4.1.2
-      redux-devtools-extension: ^2.13.9
-      redux-thunk: ^2.4.1
 
   css-blank-pseudo@3.0.3:
     resolution: {integrity: sha512-VS90XWtsHGqoM0t4KpH053c4ehxZ2E6HtGI7x68YFV0pTo/QmkV/YFA+NnlvK8guxZVNWGQhVNJGC39Q8XF4OQ==}
@@ -6873,6 +6873,34 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
+  '@cleverstack/dialer-widget@0.0.7(6670b4f89d147c9f0bcea74e8ceb01b2)':
+    dependencies:
+      '@emotion/react': 11.14.0(@types/react@19.2.7)(react@18.3.1)
+      '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1)
+      '@mui/icons-material': 5.18.0(@mui/material@5.18.0(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.2.7)(react@18.3.1)
+      '@mui/lab': 5.0.0-alpha.177(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@mui/material@5.18.0(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mui/material': 5.18.0(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mui/styles': 5.18.0(@types/react@19.2.7)(react@18.3.1)
+      '@reduxjs/toolkit': 2.11.0(react-redux@7.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      axios: 1.13.2
+      moment: 2.30.1
+      prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 17.0.2(react@18.3.1)
+      react-redux: 7.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-scripts: 5.0.0(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(type-fest@0.21.3)(typescript@4.9.5)(webpack-cli@5.1.4)
+      redux: 5.0.1
+      redux-devtools-extension: 2.13.9(redux@5.0.1)
+      redux-thunk: 3.1.0(redux@5.0.1)
+      terser-webpack-plugin: 5.3.14(webpack@5.103.0)
+      uuid: 10.0.0
+      web-vitals: 2.1.4
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+      - webpack
+
   '@csstools/normalize.css@12.1.1': {}
 
   '@csstools/postcss-cascade-layers@1.1.1(postcss@8.5.6)':
@@ -8656,34 +8684,6 @@ snapshots:
       which: 2.0.2
 
   crypto-random-string@2.0.0: {}
-
-  csdialler@2.0.16(6670b4f89d147c9f0bcea74e8ceb01b2):
-    dependencies:
-      '@emotion/react': 11.14.0(@types/react@19.2.7)(react@18.3.1)
-      '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1)
-      '@mui/icons-material': 5.18.0(@mui/material@5.18.0(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.2.7)(react@18.3.1)
-      '@mui/lab': 5.0.0-alpha.177(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@mui/material@5.18.0(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@mui/material': 5.18.0(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@mui/styles': 5.18.0(@types/react@19.2.7)(react@18.3.1)
-      '@reduxjs/toolkit': 2.11.0(react-redux@7.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      axios: 1.13.2
-      moment: 2.30.1
-      prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 17.0.2(react@18.3.1)
-      react-redux: 7.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-scripts: 5.0.0(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(type-fest@0.21.3)(typescript@4.9.5)(webpack-cli@5.1.4)
-      redux: 5.0.1
-      redux-devtools-extension: 2.13.9(redux@5.0.1)
-      redux-thunk: 3.1.0(redux@5.0.1)
-      terser-webpack-plugin: 5.3.14(webpack@5.103.0)
-      uuid: 10.0.0
-      web-vitals: 2.1.4
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - uglify-js
-      - webpack
 
   css-blank-pseudo@3.0.3(postcss@8.5.6):
     dependencies:

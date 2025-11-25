@@ -1,19 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CSDialer } from "csdialler";
+import { CSDialer } from "@cleverstack/dialer-widget";
 
 const CSDialerSDK = {
   init: (options) => {
-    const {
-      apiKey,
-      user_id,
-      env,
-      authAPI,
-      wssServerEnv,
-      isCallingEnabled,
-      open,
-      mode,
-    } = options;
+    const { apiKey, user_id, authAPI, open, wssServer, wssPort, sipDomain, isCallingEnabled, mode } = options;
 
     if (!document.getElementById("cleverstack-dialer")) {
       const dialerElement = document.createElement("div");
@@ -23,11 +14,12 @@ const CSDialerSDK = {
         <CSDialer
           apiKey={apiKey}
           user_id={user_id}
-          env={env}
           authAPI={authAPI}
           showFloatingIcon={true}
           open={open}
-          wssServerEnv={wssServerEnv}
+          wssServer={wssServer}
+          wssPort={wssPort}
+          sipDomain={sipDomain}
           isCallingEnabled={isCallingEnabled}
           mode={mode}
         />
