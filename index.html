@@ -10,8 +10,8 @@
 <body>
 
     <!-- Include the compiled SDK file -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/gh/kstmostofa/clevertsack-sdk@main/dist/1.0.2/cleverstack-sdk.js"></script>
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/CSTACKINV/cstack-dialer-sdk@main/dist/1.0.2/cleverstack-sdk.js"></script>
     <script>
         CSDialerSDK.init({
             apiKey: 'c82677ed89ede671',
@@ -24,10 +24,10 @@
             isCallingEnabled: true,
             mode: null
         });
-    </script>
-    <!-- <script>
+    </script> -->
+    <script>
         (function (d, t) {
-            var SRC_FILE = "http://127.0.0.1:5500/dist/1.0.2/cleverstack-sdk.js";
+            var SRC_FILE = "/dist/1.0.3/cleverstack-sdk.js";
             var g = d.createElement(t),
                 s = d.getElementsByTagName(t)[0];
             g.src = SRC_FILE;
@@ -43,11 +43,12 @@
                     wssPort: '7443',
                     sipDomain: 'sip.cleverstack.in',
                     isCallingEnabled: true,
-                    mode: null
+                    mode: null,
+                    displayMode: 'inline'
                 });
             };
             s.parentNode.insertBefore(g, s);
-        })(document, "script"); -->
+        })(document, "script");
     </script>
 
 </body>
