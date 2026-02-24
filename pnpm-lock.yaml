@@ -18,8 +18,8 @@ importers:
         specifier: ^7.24.7
         version: 7.28.5(@babel/core@7.28.5)
       '@cleverstack/dialer-widget':
-        specifier: 0.1.0
-        version: 0.1.0(00721ad09092170a67e860592713e1c8)
+        specifier: 0.1.1
+        version: 0.1.1(00721ad09092170a67e860592713e1c8)
       '@emotion/react':
         specifier: ^11.11.4
         version: 11.14.0(@types/react@19.2.7)(react@18.3.1)
@@ -776,8 +776,8 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@cleverstack/dialer-widget@0.1.0':
-    resolution: {integrity: sha512-dlz7OwGxP+RhS0KXy5MdNVueROHVjZMrvehkY47asKqDVdhZglWohinFJwP6uJdgqwHWAkoSa9VY2THDQqJKoQ==}
+  '@cleverstack/dialer-widget@0.1.1':
+    resolution: {integrity: sha512-+Tvw+CCyiTnSKUN9/4MmYvbxnwykVuGYW1wbqA58AxeS5v3AW5NaHLS03+9XuAvAaJ1Cy6mKK+5vsOdTHQiNqw==}
     peerDependencies:
       '@emotion/react': ^11.8.1
       '@emotion/styled': ^11.8.1
@@ -6874,7 +6874,7 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@cleverstack/dialer-widget@0.1.0(00721ad09092170a67e860592713e1c8)':
+  '@cleverstack/dialer-widget@0.1.1(00721ad09092170a67e860592713e1c8)':
     dependencies:
       '@emotion/react': 11.14.0(@types/react@19.2.7)(react@18.3.1)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@19.2.7)(react@18.3.1))(@types/react@19.2.7)(react@18.3.1)
