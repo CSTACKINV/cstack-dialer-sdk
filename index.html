@@ -1,14 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CS Dialer SDK Example</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Include the compiled SDK file -->
     <!-- <script type="text/javascript"
         src="https://cdn.jsdelivr.net/gh/CSTACKINV/cstack-dialer-sdk@main/dist/1.0.2/cleverstack-sdk.js"></script>
@@ -26,31 +24,30 @@
         });
     </script> -->
     <script>
-        (function (d, t) {
-            var SRC_FILE = "/dist/1.0.3/cleverstack-sdk.js";
-            var g = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            g.src = SRC_FILE;
-            g.defer = true;
-            g.async = true;
-            g.onload = function () {
-                CSDialerSDK.init({
-                    apiKey: 'c82677ed89ede671',
-                    user_id: '100',
-                    authAPI: 'https://api.cleverstack.in',
-                    open: true,
-                    wssServer: 'sip.cleverstack.in',
-                    wssPort: '7443',
-                    sipDomain: 'sip.cleverstack.in',
-                    isCallingEnabled: true,
-                    mode: null,
-                    displayMode: 'inline'
-                });
-            };
-            s.parentNode.insertBefore(g, s);
-        })(document, "script");
+      (function (d, t) {
+        var SRC_FILE = "/dist/1.0.4/cleverstack-sdk.js";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = SRC_FILE;
+        g.defer = true;
+        g.async = true;
+        g.onload = function () {
+          CSDialerSDK.init({
+            apiKey: "c82677ed89ede671",
+            user_id: "100",
+            authAPI: "https://api.cleverstack.in",
+            open: true,
+            wssServer: "sip.cleverstack.in",
+            wssPort: "7443",
+            sipDomain: "sip.cleverstack.in",
+            isCallingEnabled: true,
+            mode: null,
+            // displayMode: "inline",
+            author: "AICC",
+          });
+        };
+        s.parentNode.insertBefore(g, s);
+      })(document, "script");
     </script>
-
-</body>
-
+  </body>
 </html>

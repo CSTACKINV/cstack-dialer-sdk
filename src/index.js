@@ -4,7 +4,19 @@ import { CSDialer } from "@cleverstack/dialer-widget";
 
 const CSDialerSDK = {
   init: (options) => {
-    const { apiKey, user_id, authAPI, open, wssServer, wssPort, sipDomain, isCallingEnabled, mode, displayMode } = options;
+    const {
+      apiKey,
+      user_id,
+      authAPI,
+      open,
+      wssServer,
+      wssPort,
+      sipDomain,
+      isCallingEnabled,
+      mode,
+      displayMode,
+      author,
+    } = options;
 
     if (!document.getElementById("cleverstack-dialer")) {
       const dialerElement = document.createElement("div");
@@ -23,7 +35,8 @@ const CSDialerSDK = {
           isCallingEnabled={isCallingEnabled}
           mode={mode}
           displayMode={displayMode}
-        />
+          author={author}
+        />,
       );
     }
   },
